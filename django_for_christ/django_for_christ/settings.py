@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-65=f9sxyhzuh-jh2y3j@%o8bx4_yx#iimb9ma2_+!+y2(q7(hj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "10.0.2.2", "roadanomaly4christalone.pythonanywhere.com","127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "10.0.2.2", "roadanomaly4christalone.pythonanywhere.com","127.0.0.1", "roadanomaly4christalone-d0b8esbucpenbdd7.canadacentral-01.azurewebsites.net"]
 
 
 # Application definition
