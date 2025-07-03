@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import HttpResponse
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('<path:path>', lambda request, path: HttpResponse(f'You requested: /{path}')),
     path("api-road-in/", include("RoadAnomalyInput.urls")),
     path("api-road-manual-data-collection/", include("RoadAnomalyManualDataCollection.urls")),
     path("api-road-inference-logs/", include("RoadAnomalyInferenceLogs.urls")),
